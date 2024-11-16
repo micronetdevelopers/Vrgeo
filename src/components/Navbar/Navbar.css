@@ -3,14 +3,22 @@
 
 /* Navbar base styling */
 .VrGeoNavbar {
-    background-color: rgb(227, 205, 128);
+    background-color: #f4f5f6;
     font-family: 'Geist Mono', monospace;
     padding: 0.5rem 1rem;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.VrGeoNavbar .navbar-brand {
+    padding: 0;
 }
 
 .VrGeoNavbar img {
     height: 50px;
-    width: 130px;
+    width: 145px;
     object-fit: cover;
 }
 
@@ -45,8 +53,8 @@
     }
 
     .VrGeoNavbar img {
-        height: 40px;
-        width: 100px;
+        height: 30px;
+        width: 75px;
         object-fit: cover;
     }
 
@@ -71,6 +79,12 @@
         padding: 0.5rem;
     }
 
+    .VrGeoNavbar img {
+        height: 30px;
+        width: 85px;
+        object-fit: cover;
+    }
+
     .navbar-logo-shift-right {
         margin-left: 1rem;
     }
@@ -79,7 +93,11 @@
 
 /* Medium devices (min-width: 481px) and (max-width: 1024px) */
 @media (min-width: 481px) and (max-width: 1024px) {
-
+    .VrGeoNavbar img {
+        height: 40px;
+        width: 110px;
+        object-fit: cover;
+    }
 
     .navbar-logo-shift-right {
         margin-left: 3rem;

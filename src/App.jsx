@@ -8,7 +8,9 @@ import Products from './pages/Products/Products';
 import Services from './pages/Services/Services';
 import Contact from './pages/Contact/Contact';
 import Innovation from './pages/Innovation/Innovation';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import Productdetails from './pages/Products/Productdetails';
 
 const App = () => {
   return (
@@ -18,6 +20,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/products" element={<Products />} />
+        <Route path="/products-applictions" element={<Productdetails />} />
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/innovation" element={<Innovation />} />

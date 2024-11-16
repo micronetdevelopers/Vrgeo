@@ -1,11 +1,18 @@
 import React from "react";
 import "./Home.css";
 
+import homemainimage from '../../assets/homemainimage.jpg'
+import homemainimage2 from '../../assets/homemainimage2.png'
+import demImage from '../../assets/dem-image.png'
+import satelliteImage from '../../assets/satellite-image.png'
+import geospatialServices from '../../assets/geospatial-services.png'
+import webDevelopment from '../../assets/web-development.png'
+
 const Home = () => {
   return (
     <div className="Main-Home-div-content">
       <div className="home-img-div">
-        <img src="homemainimage.jpg" class="img-fluid" alt="HomePageImages" />
+        <img src={homemainimage} class="img-fluid" alt="HomePageImages" />
         <div className="top-left">
           <h2 className="home-well">Welcome to</h2>
           <h1 className="home-well">VR GEO SOLUTIONS</h1>
@@ -25,7 +32,7 @@ const Home = () => {
               informed decisions with precision and efficiency. Whether it's
               optimizing land use or enhancing disaster preparedness, our
               services are engineered to meet the unique demands of your
-              projects.{" "}
+              projects.
             </p>
             <p>
               From high-resolution satellite imagery and remote sensing to GIS
@@ -58,7 +65,7 @@ const Home = () => {
 
       <div className="d-flex">
         <img
-          src="homemainimage2.png"
+          src={homemainimage2}
           class="img-fluid home-img-two"
           alt="HomePageImages"
         />
@@ -66,8 +73,10 @@ const Home = () => {
 
       <div class="jumbotron jumbotron-fluid overview-div">
         <div class="container-fluid over-cont">
-          <h1 class="display-8 text-center font-weight-bold">Overview</h1>
-          <p class="lead overview-text">
+          <h1 class="Overview-heading display-8 text-center font-weight-bold">
+            Overview
+          </h1>
+          <p class=" overview-text">
             Founded in 2023, VR GEO Solutions provides cutting-edge geospatial
             services to help industries transform data into actionable insights.
             We specialize in various areas, including image processing, remote
@@ -83,57 +92,64 @@ const Home = () => {
           </p>
 
           <div className="overview-options">
-          <div type="div" class="overview-item geo-sol">
-            Geospatial Solutions
-          </div>
-          <div type="div" class="overview-item img-pro">
-            Image Processing
-          </div>
-          <div type="div" class="overview-item rem-sen">
-            Remote Sensing
-          </div>
-          <div type="div" class="overview-item photog">
-            Photogrammetry
-          </div>
-          <div type="div" class="overview-item GIS">
-            GIS
-          </div>
-          <div type="div" class="overview-item web-app">
-            Web Application
-          </div>
-          <div type="div" class="overview-item mob-app">
-            Mobile Application
-          </div>
-          <div type="div" class="overview-item prof-ser">
-            Professional Services
+            <div type="div" class="overview-item geo-sol">
+              Geospatial Solutions
+            </div>
+            <div type="div" class="overview-item img-pro">
+              Image Processing
+            </div>
+            <div type="div" class="overview-item rem-sen">
+              Remote Sensing
+            </div>
+            <div type="div" class="overview-item photog">
+              Photogrammetry
+            </div>
+            <div type="div" class="overview-item GIS">
+              GIS
+            </div>
+            <div type="div" class="overview-item web-app">
+              Web Application
+            </div>
+            <div type="div" class="overview-item mob-app">
+              Mobile Application
+            </div>
+            <div type="div" class="overview-item prof-ser">
+              Professional Services
+            </div>
           </div>
         </div>
-        </div>
-
-        
       </div>
 
       <div class="container marketing Our-services-div">
         <div class="jumbotron ">
-          <h1 class="display-4 text-center">our services</h1>
+          <h1 class="text-center our-serv-heading">Our Services</h1>
 
           {/* <!-- START THE FEATURETTES --> */}
 
-          <hr class="featurette-divider"/>
+          <hr class="featurette-divider" />
 
           <div class="row featurette">
             <div class="col-md-7">
-              <h2 class="featurette-heading text-primary">
-              DEM Images
-              </h2>
-              <p class="lead">
-              VR-DEM (Virtual Reality Digital Elevation Model) data generalization involves simplifying detailed elevation data for VR applications, making it easier to visualize and interact with large-scale terrains. By reducing the complexity of DEM data while retaining key features, this approach improves rendering speed and performance without sacrificing important geographical details. Generalized VR-DEM data is commonly used in industries like urban planning, environmental monitoring, and education, where users need a realistic yet efficient way to explore terrains and landscapes. This process enhances accessibility, allowing more users to experience and analyze topographical information in immersive virtual environments..
+              <h2 class="feature-img-heading featurette-heading text-primary">DEM</h2>
+              <p class=" dem-img-text">
+                VR-DEM (Virtual Reality Digital Elevation Model) data
+                generalization involves simplifying detailed elevation data for
+                VR applications, making it easier to visualize and interact with
+                large-scale terrains. By reducing the complexity of DEM data
+                while retaining key features, this approach improves rendering
+                speed and performance without sacrificing important geographical
+                details. Generalized VR-DEM data is commonly used in industries
+                like urban planning, environmental monitoring, and education,
+                where users need a realistic yet efficient way to explore
+                terrains and landscapes. This process enhances accessibility,
+                allowing more users to experience and analyze topographical
+                information in immersive virtual environments..
               </p>
             </div>
             <div class="col-md-5">
               <img
                 class="featurette-image img-fluid mx-auto"
-                src="dem-image.png"
+                src={demImage}
                 alt="demImage"
               />
             </div>
@@ -143,18 +159,26 @@ const Home = () => {
 
           <div class="row featurette">
             <div class="col-md-7 order-md-2">
-              <h2 class="featurette-heading text-primary">
-              Satellite Images Download and Processing
+              <h2 class="feature-img-heading featurette-heading text-primary">
+                Satellite Images Download and Processing
               </h2>
-              <p class="lead">
-              Satellite image analysis begins with downloading the required data, followed by preprocessing to correct distortions, remove cloud cover, and adjust for atmospheric conditions. Once prepared, the images are processed to extract valuable information, such as land cover classification, environmental changes, and spatial patterns. This workflow transforms raw satellite data into actionable insights, enabling applications across agriculture, urban planning, and environmental monitoring.
+              <p class=" satellite-img-text">
+                Satellite image analysis begins with downloading the required
+                data, followed by preprocessing to correct distortions, remove
+                cloud cover, and adjust for atmospheric conditions. Once
+                prepared, the images are processed to extract valuable
+                information, such as land cover classification, environmental
+                changes, and spatial patterns. This workflow transforms raw
+                satellite data into actionable insights, enabling applications
+                across agriculture, urban planning, and environmental
+                monitoring.
               </p>
             </div>
             <div class="col-md-5 order-md-1">
               <img
                 class="featurette-image img-fluid mx-auto"
-                src="satellite-image.png"
-                alt="Generic placeholder image"
+                src={satelliteImage}
+                alt="Satellite Images"
               />
             </div>
           </div>
@@ -163,60 +187,70 @@ const Home = () => {
 
           <div class="row featurette">
             <div class="col-md-7">
-              <h2 class="featurette-heading text-primary">
-              Geospatial Services
+              <h2 class="feature-img-heading featurette-heading text-primary">
+                Geospatial Services
               </h2>
-              <p class="lead">
-              Our geospatial services encompass image processing, remote sensing, GIS (Geographic Information Systems), and photogrammetry, providing comprehensive solutions for analyzing and interpreting spatial data. Image processing refines raw imagery, enhancing clarity and accuracy, while remote sensing captures data about the Earth's surface from afar, supporting applications like environmental monitoring and resource management. GIS integrates spatial data with mapping for in-depth analysis, useful in urban planning, infrastructure management, and more. Photogrammetry uses images to measure and map distances, aiding in the creation of detailed, accurate 3D models. Together, these services address a wide range of geospatial needs with precision and insight..
+              <p class=" geo-img-text">
+                Our geospatial services encompass image processing, remote
+                sensing, GIS (Geographic Information Systems), and
+                photogrammetry, providing comprehensive solutions for analyzing
+                and interpreting spatial data. Image processing refines raw
+                imagery, enhancing clarity and accuracy, while remote sensing
+                captures data about the Earth's surface from afar, supporting
+                applications like environmental monitoring and resource
+                management. GIS integrates spatial data with mapping for
+                in-depth analysis, useful in urban planning, infrastructure
+                management, and more. Photogrammetry uses images to measure and
+                map distances, aiding in the creation of detailed, accurate 3D
+                models. Together, these services address a wide range of
+                geospatial needs with precision and insight..
               </p>
             </div>
             <div class="col-md-5">
               <img
                 class="featurette-image img-fluid mx-auto"
-                src="geospatial-services.png"
+                src={geospatialServices}
                 alt="Generic placeholder image"
               />
             </div>
           </div>
 
-          <hr class="featurette-divider"/>
+          <hr class="featurette-divider" />
 
           <div class="row featurette">
             <div class="col-md-7 order-md-2">
-              <h2 class="featurette-heading text-primary">
-              Geospatial Web Development and Android Applications
+              <h2 class="feature-img-heading featurette-heading text-primary">
+                Geospatial Web Development and Android Applications
               </h2>
-              <p class="lead">
-              We specialize in creating geospatial web applications and Android apps that are customized to meet unique requirements, making spatial data accessible and interactive across platforms. Our web applications bring mapping, data visualization, and analytics to any web-enabled device, offering features like real-time tracking, terrain analysis, and spatial data overlays. For Android, we develop mobile apps that provide similar functionality on the go, empowering users to access and analyze geospatial information directly in the field. These solutions enable users to make data-driven decisions, track assets, and manage resources effectively, all through intuitive, user-friendly interfaces.
+              <p class=" webdev-img-text">
+                We specialize in creating geospatial web applications and
+                Android apps that are customized to meet unique requirements,
+                making spatial data accessible and interactive across platforms.
+                Our web applications bring mapping, data visualization, and
+                analytics to any web-enabled device, offering features like
+                real-time tracking, terrain analysis, and spatial data overlays.
+                For Android, we develop mobile apps that provide similar
+                functionality on the go, empowering users to access and analyze
+                geospatial information directly in the field. These solutions
+                enable users to make data-driven decisions, track assets, and
+                manage resources effectively, all through intuitive,
+                user-friendly interfaces.
               </p>
             </div>
             <div class="col-md-5 order-md-1">
               <img
                 class="featurette-image img-fluid mx-auto"
-                src="web-development.png"
+                src={webDevelopment}
                 alt="Generic placeholder image"
               />
             </div>
           </div>
-          <hr class="featurette-divider"/>
+          <hr class="featurette-divider" />
 
-        
-        {/* <!-- /END THE FEATURETTES --> */}
+          {/* <!-- /END THE FEATURETTES --> */}
         </div>
       </div>
-
-
-
-
-
-
-
     </div>
-
-
-
-
-
   );
 };
 

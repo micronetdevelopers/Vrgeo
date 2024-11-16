@@ -1,51 +1,42 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {}
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;700&display=swap');
 
-section {
-  padding: 60px 0;
-  min-height: 100vh;
-}
-
-a,
-a:hover,
+/* a:hover,
 a:focus,
 a:active {
   text-decoration: none;
   outline: none;
-}
+} */
 
-ul {
+
+.VrGeomain-footer ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.main-footer {
+.VrGeomain-footer {
   position: relative;
   background: #1e2129;
+  font-family: 'Geist Mono', monospace;
 }
 
-.footer-widget {
+.VrGeofooter-widget {
   z-index: 1;
 }
 
-.footer-content {
+.VrGeofooter-content {
   position: relative;
-  padding: 85px 0px 80px 0px;
+  padding: 20px 0px 20px 0px;
 }
 
-.footer-content:before {
+.VrGeofooter-content:before {
   position: absolute;
   content: '';
   background: url(https://i.ibb.co/jyRLrBZ/world-map.png);
-  width: 744px;
-  height: 365px;
-  top: 50px;
-  right: 0px;
+  width: 70rem;
+  height: 358px;
+  top: 5px;
+  right: 7rem;
   background-size: cover;
   background-repeat: no-repeat;
   animation-name: float-bob;
@@ -70,22 +61,23 @@ ul {
   -o-animation-timing-function: linear;
 }
 
-.footer-content .logo-widget {
+/* color: blanchedalmond; */
+.VrGeofooter-content .logo-widget {
   position: relative;
   margin-top: -5px;
 }
 
-.footer-content .logo-widget .footer-social li {
+.VrGeofooter-content .logo-widget .VrGeofooter-social li {
   position: relative;
   display: inline-block;
   margin-right: 9px;
 }
 
-.footer-content .logo-widget .footer-social li:last-child {
+.VrGeofooter-content .logo-widget .VrGeofooter-social li:last-child {
   margin-right: 0px;
 }
 
-.footer-content .logo-widget .footer-social li a {
+.VrGeofooter-content .logo-widget .VrGeofooter-social li a {
   position: relative;
   display: inline-block;
   width: 42px;
@@ -97,21 +89,21 @@ ul {
   border-radius: 50%;
 }
 
-.footer-content .logo-widget .footer-social li a:hover {
+.VrGeofooter-content .logo-widget .VrGeofooter-social li a:hover {
   color: #ffffff;
   background: #ff5e14;
 }
 
-.footer-content .logo-widget .logo-box {
+.VrGeofooter-content .logo-widget .VrGeologo-box {
   margin-bottom: 25px;
 }
 
-.footer-content .logo-widget .text p {
+.VrGeofooter-content .logo-widget .VrGeotext p {
   color: #9ea0a9;
   margin-bottom: 32px;
 }
 
-.footer-content .footer-title {
+.VrGeofooter-content .VrGeofooter-title {
   position: relative;
   font-size: 24px;
   line-height: 35px;
@@ -121,67 +113,71 @@ ul {
   margin-bottom: 27px;
 }
 
-.footer-content .service-widget .list li {
+.MainName {
+  color: blanchedalmond;
+}
+
+.VrGeofooter-content .VrGeoservice-widget .VrGeolist li {
   display: block;
   margin-bottom: 12px;
 }
 
-.footer-content .service-widget .list li a {
+.VrGeofooter-content .VrGeoservice-widget .VrGeolist li a {
   position: relative;
   display: inline-block;
   color: #9ea0a9;
 }
 
-.footer-content .service-widget .list li a:hover {
+.VrGeofooter-content .VrGeoservice-widget .VrGeolist li a:hover {
   color: #ff5e14;
 }
 
-.footer-content .contact-widget p {
+.VrGeofooter-content .VrGeocontact-widget p {
   color: #9ea0a9;
   margin-bottom: 15px;
 }
 
-
-.footer-content .contact-widget .footer-title {
+.VrGeofooter-content .VrGeocontact-widget .VrGeofooter-title {
   margin-bottom: 29px;
 }
 
 /** footer-bottom **/
 
-.footer-bottom {
+.VrGeofooter-bottom {
   position: relative;
   background: #13151a;
-  padding: 10px 0px 10px 0px;
 }
 
-.footer-bottom .copyright,
-.footer-bottom .copyright a,
-.footer-bottom .footer-nav li a {
+.VrGeofooter-bottom .VrGeocopyright,
+.VrGeofooter-bottom .VrGeocopyright a,
+.VrGeofooter-bottom .VrGeofooter-nav li a {
   position: relative;
   color: #9ea0a9;
+  font-size: 12px;
+  padding: 2px;
 }
 
-.footer-bottom .copyright a:hover,
-.footer-bottom .footer-nav li a:hover {
+.VrGeofooter-bottom .VrGeocopyright a:hover,
+.VrGeofooter-bottom .VrGeofooter-nav li a:hover {
   color: #ff5e14;
 }
 
-.footer-bottom .footer-nav {
+.VrGeofooter-bottom .VrGeofooter-nav {
   position: relative;
   text-align: right;
 }
 
-.footer-bottom .footer-nav li {
+.VrGeofooter-bottom .VrGeofooter-nav li {
   position: relative;
   display: inline-block;
   margin-left: 29px;
 }
 
-.footer-bottom .footer-nav li:first-child {
+.VrGeofooter-bottom .VrGeofooter-nav li:first-child {
   margin-left: 0px;
 }
 
-.footer-bottom .footer-nav li:before {
+.VrGeofooter-bottom .VrGeofooter-nav li:before {
   position: absolute;
   content: '';
   background: #9ea0a9;
@@ -191,11 +187,38 @@ ul {
   left: -18px;
 }
 
-.footer-bottom .footer-nav li:first-child:before {
+.VrGeofooter-bottom .VrGeofooter-nav li:first-child:before {
   display: none;
 }
 
-.logo-box img {
+.VrGeologo-box img {
   max-width: 220px;
   background-color: #ffffffe3;
+}
+
+.VrGeofooter-nav {
+  margin-bottom: 5px;
+}
+
+.VrGeocopyright {
+  margin-top: 3px;
+}
+
+.VrGeotext .contact-item {
+  display: flex;
+}
+
+.VrGeotext .contact-icon {
+  margin-right: 10px;
+  color: #ff5e14;
+  margin-top: 4px;
+}
+
+.firsticon {
+  font-size: 30px;
+}
+
+.VrGeotext p {
+  margin: 0;
+  color: #9ea0a9;
 }

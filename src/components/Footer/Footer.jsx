@@ -1,31 +1,25 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { FaFacebookF, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaLinkedin, FaAddressCard, FaPhone } from 'react-icons/fa';
 import './Footer.css'; // Add styles for this component
-import VRGEO from '../../assets/VR_GEO_SOLUTIONS_LOGO.png';
-
+import { MdEmail } from "react-icons/md";
 const Footer = () => {
     return (
         <>
             {/* Main Footer */}
-            <footer className="main-footer">
+            <footer className="VrGeomain-footer">
                 <div className="container">
-                    <div className="footer-content">
+                    <div className="VrGeofooter-content">
                         <Row>
                             {/* Logo Section */}
-                            <Col lg={4} md={6} sm={12} className="footer-column">
-                                <div className="logo-widget footer-widget">
-                                    <figure className="logo-box">
+                            <Col lg={4} md={6} sm={12} className="VrGeofooter-column">
+                                <div className="logo-widget VrGeofooter-widget">
+                                    <figure className="VrGeologo-box">
                                         <a href="#">
-                                            <img
-                                                // src="https://i.ibb.co/QDy827D/ak-logo.png"
-                                                src={VRGEO}
-                                                alt="Logo"
-                                                className="img-fluid"
-                                            />
+                                            <div className="VrGeofooter-title" >VR GEO SOLUTIONS</div>
                                         </a>
                                     </figure>
-                                    <div className="text">
+                                    <div className="VrGeotext">
                                         <p>
                                             VR Geo Solutions offers cutting-edge<br />
                                             satellite imagery and geospatial services<br />
@@ -37,7 +31,7 @@ const Footer = () => {
                                             decision-making.
                                         </p>
                                     </div>
-                                    <ul className="footer-social">
+                                    <ul className="VrGeofooter-social">
                                         <li><a href="#"><FaFacebookF /></a></li>
                                         <li><a href="#"><FaInstagram /></a></li>
                                         <li><a href="#"><FaLinkedin /></a></li>
@@ -46,10 +40,10 @@ const Footer = () => {
                             </Col>
 
                             {/* Services Section */}
-                            <Col lg={3} md={6} sm={12} className="offset-lg-2 footer-column">
-                                <div className="service-widget footer-widget">
-                                    <div className="footer-title">Our Services</div>
-                                    <ul className="list">
+                            <Col lg={3} md={6} sm={12} className="offset-lg-2 VrGeofooter-column">
+                                <div className="VrGeoservice-widget VrGeofooter-widget">
+                                    <div className="VrGeofooter-title">Our Services</div>
+                                    <ul className="VrGeolist">
                                         <li><a href="#">Geospatial Solutions</a></li>
                                         <li><a href="#">Image Processing</a></li>
                                         <li><a href="#">Photogrammetry</a></li>
@@ -62,13 +56,22 @@ const Footer = () => {
                             </Col>
 
                             {/* Contact Section */}
-                            <Col lg={3} md={6} sm={12} className="footer-widget" >
-                                <div className="contact-widget footer-widget">
-                                    <div className="footer-title">Contact Us</div>
-                                    <div className="text">
-                                        <p>Plot no14 Phase 1 Subhadra nagar More opposite Vanstalipuram  500072</p>
-                                        <p>7670967086</p>
-                                        <p>vrgeosolutions2023@gmail.com</p>
+                            <Col lg={3} md={6} sm={12} className="VrGeofooter-widget">
+                                <div className="VrGeocontact-widget VrGeofooter-widget">
+                                    <div className="VrGeofooter-title">Contact Us</div>
+                                    <div className="VrGeotext">
+                                        <div className="contact-item">
+                                            <FaAddressCard className="contact-icon firsticon" />
+                                            <p>Plot no14 Phase 1 Subhadra nagar More opposite Vanstalipuram 500072</p>
+                                        </div>
+                                        <div className="contact-item">
+                                            <FaPhone className="contact-icon" />
+                                            <p>7670967086</p>
+                                        </div>
+                                        <div className="contact-item">
+                                            <MdEmail className="contact-icon" />
+                                            <p>vrgeosolutions2023@gmail.com</p>
+                                        </div>
                                     </div>
                                 </div>
                             </Col>
@@ -78,16 +81,16 @@ const Footer = () => {
             </footer>
 
             {/* Footer Bottom Section */}
-            <div className="footer-bottom">
+            <div className="VrGeofooter-bottom">
                 <Container>
                     <Row>
                         <Col lg={6} md={6} sm={12}>
-                            <div className="copyright">
-                                <a href="#">VR GEO SOLUTIONS</a> &copy; 2024 All Rights Reserved
+                            <div className="VrGeocopyright">
+                                <a href="#">VR GEO SOLUTIONS</a> &copy; 2023 All Rights Reserved
                             </div>
                         </Col>
                         <Col lg={6} md={6} sm={12}>
-                            <ul className="footer-nav">
+                            <ul className="VrGeofooter-nav">
                                 <li><a href="#">Terms of Service</a></li>
                                 <li><a href="#">Privacy Policy</a></li>
                             </ul>
