@@ -1,0 +1,124 @@
+/* * {
+  font-family: "Times New Roman", Times, serif;
+} */
+.Main-Home-div-content{
+    font-family: "Times New Roman", Times, serif;
+}
+
+.home-para {
+  font-size: 15px;
+}
+
+.home-img-div {
+  position: relative;
+  color: white;
+  top: 0px;
+}
+
+.home-img-div img {
+  /* height: 650px; */
+}
+
+.home-text-of-para {
+  padding: 0.5rem 5rem;
+}
+
+.top-left {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+.img-Para {
+  margin-right: 65%;
+  color: #16c746e6;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: initial;
+}
+
+.home-well {
+  font-weight: 700;
+}
+
+.home-img-two {
+  width: 100%;
+}
+
+.overview-div {
+  background-color: seashell;
+}
+.overview-text {
+  line-height: initial;
+  text-align: center;
+  font-size: 18px;
+}
+
+.over-cont {
+  padding: 0.5rem 7rem;
+}
+
+.event-card {
+  padding: 2rem;
+  text-align: center;
+}
+.event-info h3 {
+  font-size: 18px;
+}
+
+.overview-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.overview-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 10rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.geo-sol {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+}
+
+.img-pro {
+  background: linear-gradient(135deg, #f1c40f, #f39c12);
+}
+
+.rem-sen {
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+}
+
+.photog {
+  background: linear-gradient(135deg, #9b59b6, #8e44ad);
+}
+
+.GIS {
+  background: linear-gradient(135deg, #1abc9c, #16a085);
+}
+
+.web-app {
+  background: linear-gradient(135deg, #2c3e50, #34495e);
+}
+
+.mob-app {
+  background: linear-gradient(135deg, #95a5a6, #7f8c8d);
+}
+
+.prof-ser {
+  background: linear-gradient(135deg, #16a085, #1abc9c);
+}
+
+/* .Our-services-div{
+    background-color: #e5e4ec;
+  } */
